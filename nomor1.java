@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NomorTiga {
+public class nomor1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int nArr = input.nextInt();
@@ -9,12 +9,13 @@ public class NomorTiga {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = input.nextInt();
         }
-        int n =0;
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 5 == 0){
-               n++;
+                System.out.println(arr[i] + " adalah kelipatan 5");
+            }else{
+                System.out.println(arr[i] + " bukan kelipatan 5");
             }
         }
-        System.out.println("Banyak kelipatan 5 ada " + n);
     }
 }
